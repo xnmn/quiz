@@ -115,9 +115,9 @@ const reset = () => {
 const quizEnd = () => {
     // console.log(document.getElementsByClassName("container"));
     if(correctl > correctp){
-        window.location.href = "/louis.html";
+        window.location.href = "./louis.html";
     } else {
-        window.location.href = "/philip.html";
+        window.location.href = "./philip.html";
     }
 }
 loadQuestion(index);
