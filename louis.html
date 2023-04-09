@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz app</title>
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
@@ -76,7 +77,36 @@
                     En résumé, les guerres menées par Louis XIV ont toutes été caractérisées par l'expansion
                     territoriale de la France et l'affirmation de son pouvoir en Europe, mais ont également été
                     coûteuses et souvent sanglantes pour toutes les parties impliquées.
-                </p>
+                </p><br>
+                <div id="window">
+                    <div id="slide-container">
+                        <div class="slides">
+                      
+                <!-- First image --> 
+                            <img class="slide" src="images/marie-l.png">
+                        </div>
+                    
+                <!-- Second image --> 
+                        <div class="slides">
+                            <img class="slide" src="images/dauphin-l.png"> 
+                        </div>
+                    
+                 <!-- Third image --> 
+                    <div class="slides">
+                            <img class="slide" src="images/jean-l.png"> 
+                        </div>
+                 <!-- Fourth image --> 
+                    <div class="slides">
+                            <img class="slide" src="images/phillipe-l.png"> 
+                        </div>
+                        <a id="previous" class="arrow">&#10094</a>
+                        <a id="next" class="arrow">&#10095</a>
+                        <div id="text-bar">
+                            <p id="place"></p>
+                        </div>
+                    </div>
+                    <div id="dotsContainer"></div>
+                </div>
                 <br>
                 <h3 class="w-100">Héritage :</h3>
                 <hr>
@@ -98,8 +128,12 @@
                 <center><iframe class="col" width="1280" height="720" src="https://www.youtube.com/embed/Pv2-AFeh0B4" title="Secrets d&#39;Histoire - Louis XIV : le Roi est mort, vive le Roi ! (Intégrale)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </center>
                 </div>
+                
         </div>
+        
     </section>
+    
+    <script src="js/slider.js"></script>
     <script src="js/app.js"></script>
 </body>
 
