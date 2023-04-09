@@ -63,7 +63,7 @@ let correctl = 0,
 let questionBox = document.getElementById("questionBox");
 let currentBox = document.getElementById("current");
 let totalBox = document.getElementById("total");
-let allInputs = document.querySelectorAll("input[type='radio']")
+let allInputs = document.querySelectorAll("input[type='radio']");
 const loadQuestion = () => {
     if (total === index) {
         return quizEnd()
@@ -84,10 +84,14 @@ document.querySelector("#submit").addEventListener(
         const ans = getAnswer()
         if (ans === data.correctl) {
             correctl++;
-        } else {
+            index++;
+        } else if(ans === data.correctp) {
             correctp++;
+            index++;
+        } else {
+            alert("Select one answer");
         }
-        index++;
+        
         loadQuestion()
     }
 )
@@ -113,7 +117,6 @@ const reset = () => {
 }
 
 const quizEnd = () => {
-    // console.log(document.getElementsByClassName("container"));
     if(correctl > correctp){
         window.location.href = "./louis.html";
     } else {
