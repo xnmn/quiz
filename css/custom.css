@@ -122,6 +122,23 @@ body {
   min-height: 100vh;
 }
 
+button {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: rgb(113, 22, 174);
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    display: inline;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: rgb(34, 6, 53);
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .content-col {
